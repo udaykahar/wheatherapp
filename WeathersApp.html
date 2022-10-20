@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Website | Team Heptagon</title>
+    <link rel="stylesheet" href="Weather App CSS.css">
+    
+    <link rel="icon" href="download (1).jpg">
+</head>
+
+<body>
+    <div class="header">
+        <h1>WEATHER APP</h1>
+        <div class="search">
+            <form id="search-form">
+                <input type="search" id="search" class="search" placeholder="Search for Location..." required
+                    autocomplete="off">
+                <button id="searchbutton" class="searchbutton">SEARCH</button>
+            </form>
+        </div>
+    </div>
+    <main class="mainContent">
+        <div class="weathermain">
+            <div id="location">
+                <p>-------</p>
+            </div>
+                <div id="temp">
+                    <img id="temp-icon" src="/icon/sun.png" alt="" >
+                    <p><span id="temp-value">-------</span><span id="temp-unit">&#176c</span></p>
+                </div>
+                
+
+                <div id="climate">
+                    <p>-------</p>
+                </div>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecast">
+            <p class="Forecast-header">Upcoming Forecast</p>
+            <div class="templist">
+                <div class="next">
+                    <div>
+                        <p class="time">12:00 AM</p>
+                        <p>29°C / 25°C</p>
+                    </div>
+                    <p class="Weather-description">Light Rain</p>
+                </div>
+                <div class="next">
+                    <div>
+                        <p class="time">12:00 AM</p>
+                        <p>29°C / 25°C</p>
+                    </div>
+                    <p class="Weather-description">Light Rain</p>
+                </div>
+                <div class="next">
+                    <div>
+                        <p class="time">12:00 AM</p>
+                        <p>29°C / 25°C</p>
+                    </div>
+                    <p class="Weather-description">Light Rain</p>
+                </div>
+                <div class="next">
+                    <div>
+                        <p class="time">12:00 AM</p>
+                        <p>29°C / 25°C</p>
+                    </div>
+                    <p class="Weather-description">Light Rain</p>
+                </div>
+
+            </div>
+        </div> 
+    </main> 
+    <div class="futureforecast">
+        <div class="today" id="current-temp">
+            <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">22°C </div>
+                <div class="temp">29°C </div>
+            </div>
+
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tuesday</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+                <div class="temp">22°C </div>
+                <div class="temp">29°C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wednesday</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+                <div class="temp">22°C </div>
+                <div class="temp">29°C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Friday</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+                <div class="temp">22°C </div>
+                <div class="temp">29°C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Saturday</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+                <div class="temp">22°C </div>
+                <div class="temp">29°C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sunday</div>
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+                <div class="temp">22°C </div>
+                <div class="temp">29°C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="forecastID">
+    <div class="divider2"></div>
+    <p class="Forecast-header">Next 4 Days Forecast</p>
+    <div class="weekF">
+        <div class="dayF">
+            <p class="date">Sun Jul 03 2022</p>
+            <p>31°C / 25°C </p>
+            <p class="Weather-description">Oercast Clouds</p>
+        </div>
+        <div class="dayF">
+            <p class="date">Sun Jul 03 2022</p>
+            <p>31°C / 25°C </p>
+            <p class="Weather-description">Oercast Clouds</p>
+        </div>
+        <div class="dayF">
+            <p class="date">Sun Jul 03 2022</p>
+            <p>31°C / 25°C </p>
+            <p class="Weather-description">Oercast Clouds</p>
+        </div>
+        <div class="dayF">
+            <p class="date">Sun Jul 03 2022</p>
+            <p>31°C / 25°C </p>
+            <p class="Weather-description">Oercast Clouds</p>
+        </div>
+</div> -->
+    
+    <script src="WeatherAppJS.js"></script>
+</body>
+
+</html>

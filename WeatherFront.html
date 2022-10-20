@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Website | Team Heptagon</title>
+<link rel="icon" href="download (1).jpg">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&displayswap);
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Spartan', 'sans-serif';
+        }
+        
+        .hero {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding: 0px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content h1 {
+            font-size: 120px;
+            padding-bottom: 60px;
+            color: rgb(152, 140, 140);
+            font-weight: 600;
+
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 4%;
+            text-transform: uppercase;
+            color: rgb(91, 63, 192);
+            text-shadow: black 0px 0px 2px;
+        }
+
+        span {
+            color: black;
+            text-shadow: rgb(86, 52, 52) 0px 0px 14px;
+        }
+
+        .content a {
+            text-decoration: none;
+            display: inline-block;
+            color: rgb(89, 147, 130);
+            font-size: 24px;
+            border: 2px solid rgb(110, 118, 187);
+            border-radius: 50px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        /* #search {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            width: 550px;
+            font-size: 30px;
+            padding: 10px;
+            margin: 20px;
+        } */
+        #search {
+           background:none;
+           border: none;
+           border-bottom: 1px #ccc solid;
+           padding: 0 1em 0.5em 0;
+           width: 80%;
+           color: rgb(76, 31, 31);
+           font-size: 1.1em;
+        }
+        #search:focus{
+            outline: none;
+        }
+        #search::placeholder{
+            color: #ccc;
+        }
+
+        #vidtest {
+            position: absolute;
+            z-index: -1;
+            overflow: hidden;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <!-- <video autoplay loop plays-inline class="background-video">
+            <source src="weatherfrontbackground_2.mp4">
+        </video> -->
+        <video id="vidtest" autoplay muted loop>
+            <source id="video-source" src="/vid/weatherfrontbackground_2.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <h1 class="title">Team <span>Heptagon</span></h1>
+        </nav>
+        <div class="content">
+            <h1>WEATHER APP</h1>
+            <input type="text" id="search" placeholder="Search for Location...">
+            <a href="Weather App.html">SEARCH</a>
+        </div>
+    </div>
+</body>
+<script>
+    var source = document.getElementById('video-source');
+
+    var videos = [
+        "vid/weatherfrontbackground_1.mp4",
+        "vid/weatherfrontbackground_2.mp4",
+        "vid/weatherfrontbackground_3.mp4",
+    ];
+
+    var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+    source.setAttribute('src', randomVideo);
+
+</script>
+
+</html>
